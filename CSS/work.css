@@ -1,0 +1,106 @@
+.navbar-nav{
+  margin-left: auto;
+
+
+}
+.navbar{
+  background-color:   rgba(0, 0, 0, 0.75);
+  padding-left: 0;
+}
+.navbar-brand{
+  font-family: 'MonteCarlo', cursive;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: bold; */
+}
+.dropdown-menu{
+  background-color:   rgba(0, 0, 0, 0.75);
+}
+.dropdown-item{
+  color: white;
+}
+
+#page-heading{
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Urbanist', sans-serif;
+}
+.work-headings{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-us-button-div{
+  text-align: center;
+
+}
+.contact-us-buttons{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #EE6F57;
+  color: white;
+  border-radius: 50px;
+  border-width: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+/* image gallery */
+.images-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin: 0;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 10px;
+}
+
+.column img {
+  margin: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#footer{
+  background-color: #EE6F57;
+  padding: 8% 8%;
+  margin-top: 20px;
+
+}
+#connect{
+  text-align: center;
+  font-size: 1.5em;
+  color:  white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.icons{
+  font-size: 2em;
+  text-align: center;
+  margin: 0 3%;
+  text-decoration: none;
+  color: white;
+
+}
+.icons:hover{
+  color: grey;
+}
+.footer-div{
+  text-align: center;
+}
+#copyright{
+  font-size: 1em;
+  margin-top: 8%;
+  margin-bottom: 0;
+  color: grey;
+  text-align: center;
+}
