@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,35 +21,52 @@
   <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg  navbar-dark fixed-top">
     <a class="navbar-brand" href="#">S</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Services</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Our Work
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Weddings</a>
+            <a class="dropdown-item" href="#">Pre-Weddings</a>
+            <a class="dropdown-item" href="#">Event Photography</a>
+            <a class="dropdown-item" href="#">Maternity Photoshoot</a>
+            <a class="dropdown-item" href="#">Baby Photoshoot</a>
+            <a class="dropdown-item" href="#">Product Photography</a>
+            <a class="dropdown-item" href="#">Factory Photoshoot</a>
+            <a class="dropdown-item" href="#">Interior Photography</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#" target="_blank">
+          <i class="fab fa-facebook-f"></i></a>
+        </li>
       </ul>
-
     </div>
-    </div>
-    </nav>
+  </nav>
 
     <!-- navbar end -->
     <section id="hero-section">
@@ -57,45 +75,87 @@
 
 
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/c3.jpg" class="d-block carousel-image" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/c2.jpg" class="d-block carousel-image" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/c1.jpg" class="d-block carousel-image" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev carousel-controls" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next carousel-controls" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block carousel-image" src="images/c1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-captions">WEDDINGS</h5>
+              <p><a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work <i class="fas fa-arrow-circle-right"></i></a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block  carousel-image" src="images/c2.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-captions">PRE-WEDDINGS</h5>
+            <p><a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work<i class="fas fa-arrow-circle-right"></i></a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-image" src="images/c3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-captions">EVENT PHOTOGRAPHY</h5>
+            <p><a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work <i class="fas fa-arrow-circle-right"></i></a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-image" src="images/c3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-captions">MATERNITY PHOTOSHOOT</h5>
+            <p><a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work <i class="fas fa-arrow-circle-right"></i></a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-image" src="images/c3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-captions">BABY PHOTOSHOOT</h5>
+          <p><a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work <i class="fas fa-arrow-circle-right"></i></a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-image" src="images/c3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-captions">PRODUCT PHOTOGRAPHY</h5>
+              <p><a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work<i class="fas fa-arrow-circle-right"></i></a></p>
 
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-image" src="images/c3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-captions">FACTORY PHOTOSHOOT</h5>
+            <p><a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work<i class="fas fa-arrow-circle-right"></i></a></p>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-image" src="images/c3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-captions">INTERIOR PHOTOGRAPHY</h5>
+            <p>  <a href="about-us.html" class="btn btn-outline-dark carousel-buttons">See Our Work <i class="fas fa-arrow-circle-right"></i></a></p>
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span ><i class="fas fa-arrow-circle-left carousel-arrow"></i></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span ><i class="fas fa-arrow-circle-right carousel-arrow"></i></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
     </section>
 
     <hr>
@@ -104,7 +164,7 @@
 
 
     <div class="container">
-      <h2 class="section-headings">About Us</h2>
+      <h2 class="section-headings">ABOUT US</h2>
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
           <img src="images/ssp.jpg" alt="" class="about-us-image">
@@ -130,21 +190,23 @@
 
     </section>
 
+    <hr>
+
 
     <section id="services-section">
 
 
 
         <div class="container">
-          <h2 class="section-headings">Services</h2>
+          <h2 class="section-headings">SERVICES</h2>
           <div class="row justify-content-center services-rows">
             <div class="col-lg-6 col-md-6 col-sm services-div">
               <div class="card" >
 <img src="images/c1.jpg" alt="" class="services-images">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">WEDDINGS</h5>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    <a href="#" class="btn btn-outline-dark card-buttons">Our Work</a>
   </div>
 </div>
             </div>
@@ -152,9 +214,9 @@
               <div class="card" >
   <img src="images/c1.jpg" alt="" class="services-images">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">PRE-WEDDINGS</h5>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    <a href="#" class="btn btn-outline-dark card-buttons" >Our Work</a>
   </div>
 </div>
             </div>
@@ -166,9 +228,9 @@
                 <div class="card" >
     <img src="images/c1.jpg" alt="" class="services-images">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">EVENT PHOTOGRAPHY</h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-outline-dark card-buttons">Our Work</a>
     </div>
   </div>
 
@@ -178,9 +240,9 @@
                 <div class="card" >
     <img src="images/c1.jpg" alt="" class="services-images">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">MATERNITY PHOTOSHOOT</h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-outline-dark card-buttons">Our Work</a>
     </div>
   </div>
 
@@ -192,9 +254,9 @@
                             <div class="card" >
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">BABY PHOTOSHOOT</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-outline-dark card-buttons">Our Work</a>
                 </div>
               </div>
             </div>
@@ -203,9 +265,36 @@
                 <div class="card" >
     <img src="images/c1.jpg" alt="" class="services-images">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">PRODUCT PHOTOGRAPHY</h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-outline-dark card-buttons">Our Work</a>
+    </div>
+  </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="row justify-content-center services-rows">
+            <div class="col-lg-6 col-md-6 col-sm services-div">
+                            <div class="card" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">FACTORY PHOTOSHOOT</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-outline-dark card-buttons">Our Work</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm services-div">
+
+                <div class="card" >
+    <img src="images/c1.jpg" alt="" class="services-images">
+    <div class="card-body">
+      <h5 class="card-title">INTERIOR PHOTOGRAPHY</h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-outline-dark card-buttons">Our Work</a>
     </div>
   </div>
 
@@ -221,7 +310,7 @@
 
     <section id="our-work">
       <div class="container">
-          <h2 class="section-headings">Our Work</h2>
+          <h2 class="section-headings">OUR WORK</h2>
 
           <h3 class="work-headings">Weddings</h3>
 
@@ -271,7 +360,7 @@
 
             <hr>
 
-        <h3 class="work-headings">Maternity Photoshoot</h3>
+        <h3 class="work-headings">Event Photography</h3>
 
         <div class="images-row">
             <div class="column">
@@ -293,7 +382,7 @@
 
       <hr>
 
-      <h3 class="work-headings">Interior Photography</h3>
+      <h3 class="work-headings">Maternity Photoshoot</h3>
 
       <div class="row images-row">
           <div class="column">
@@ -316,7 +405,7 @@
     <hr>
 
 
-    <h3 class="work-headings">Product Photography</h3>
+    <h3 class="work-headings">Baby Photoshoot</h3>
 
     <div class="row images-row">
         <div class="column">
@@ -338,7 +427,7 @@
 
     <hr>
 
-    <h3 class="work-headings">Event Photography</h3>
+    <h3 class="work-headings">Product Photography</h3>
 
     <div class="row images-row">
       <div class="column">
@@ -358,17 +447,79 @@
         <a href="about-us.html" class="btn btn-outline-dark see-more-buttons">See more <i class="fas fa-arrow-circle-right"></i></a>
     </div>
 
+    <hr>
+
+    <h3 class="work-headings">Factory Photoshoot</h3>
+
+    <div class="row images-row">
+      <div class="column">
+        <img src="images/c1.jpg">
+        <img src="images/c1.jpg">
+        <img src="images/c2.jpg">
+
+      </div>
+      <div class="column">
+        <img src="images/c1.jpg">
+        <img src="images/c1.jpg">
+        <img src="images/c3.jpg">
+      </div>
+    </div>
+
+    <div class="see-more-button-div">
+        <a href="about-us.html" class="btn btn-outline-dark see-more-buttons">See more <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+
+    <hr>
+
+    <h3 class="work-headings">Interior Photography</h3>
+
+    <div class="row images-row">
+      <div class="column">
+        <img src="images/c1.jpg">
+        <img src="images/c1.jpg">
+        <img src="images/c2.jpg">
+
+      </div>
+      <div class="column">
+        <img src="images/c1.jpg">
+        <img src="images/c1.jpg">
+        <img src="images/c3.jpg">
+      </div>
+    </div>
+
+    <div class="see-more-button-div">
+        <a href="about-us.html" class="btn btn-outline-dark see-more-buttons">See more <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+
+    <hr>
+
       </div>
 
     </section>
 
-    <hr>
 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <section id="footer">
+      <p id="connect">Connect With Us</p>
+      <div class="footer-div">
+        <a class="icons" href="#" target="_blank" ><i class="fab fa-facebook"></i></a>
+        <a class="icons" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="icons" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
 
+      </div>
+
+      <p id="copyright">© Sagar Sen Photography <br> Website: Designed and developed by Debangan Das</p>
+
+
+
+
+
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

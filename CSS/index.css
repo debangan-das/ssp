@@ -5,8 +5,29 @@ hr{
   margin-bottom: 10px;
   margin-left: 25%;
 }
-.navbar{
+.navbar-nav{
+  margin-left: auto;
 
+
+}
+.navbar{
+  background-color:   rgba(0, 0, 0, 0.75);
+}
+.navbar-brand{
+  font-family: 'MonteCarlo', cursive;
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 1.5em;
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.dropdown-menu{
+  background-color:   rgba(0, 0, 0, 0.75);
+}
+.dropdown-item{
+  color: white;
 }
 #hero-section{
   height: auto;
@@ -17,6 +38,9 @@ hr{
 #main-header{
   text-align: center;
   font-family: 'MonteCarlo', cursive;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 3em;
 }
 
 .carousel-inner{
@@ -24,22 +48,30 @@ hr{
 
 }
 .carousel-image{
-  width: 60%;
-  height: 80%;
+  width: 50%;
+  height: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.carousel-buttons{
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 50px;
+  border-width: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+.carousel-buttons:hover{
+    background-color: #EE6F57
 }
 .carousel-controls{
   background-color: black;
 }
 
-.carousel-buttons{
-position: absolute;
-top: 50%;
-}
+
 .carousel-indicators li {
-  background-color: #070d59;
+  background-color: white;
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -47,7 +79,23 @@ top: 50%;
   margin-top: auto;
 }
 .carousel-indicators .active {
+
   background-color: #EE6F57;
+}
+.carousel-arrow{
+  color: black;
+  font-size: 2em;
+}
+.carousel-arrow:hover{
+  color: #EE6F57
+}
+.carousel-captions{
+  display: inline-block;
+   background: rgba(0, 0, 0, 0.3);
+   padding: 5px 15px;
+   border-width: 0;
+   margin-bottom: 10px;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .section-headings{
@@ -60,7 +108,9 @@ top: 50%;
 
 }
 .about-us-text{
-
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.2em;
+  margin-top: 30px;
 }
 .about-us-image{
   width: 50%;
@@ -96,11 +146,30 @@ top: 50%;
   margin-right: auto;
   width: 80%;
 }
+.card-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.card-text{
+  font-family: 'Roboto', sans-serif;
+}
+.card-body{
+  text-align: center;
+}
 .services-div{
   /* text-align: center; */
 }
+.card-buttons{
+  background-color: #EE6F57;
+  color: white;
+  border-radius: 50px;
+  border-width: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 .work-headings{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
 }
 
 
@@ -124,11 +193,52 @@ top: 50%;
   width: 100%;
 }
 
+#footer{
+  background-color: #EE6F57;
+  padding: 8% 8%;
+  margin-top: 20px;
+
+}
+#connect{
+  text-align: center;
+  font-size: 1.5em;
+  color:  white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.icons{
+  font-size: 2em;
+  text-align: center;
+  margin: 0 3%;
+  text-decoration: none;
+  color: white;
+
+}
+.icons:hover{
+  color: grey;
+}
+.footer-div{
+  text-align: center;
+}
+#copyright{
+  font-size: 1em;
+  margin-top: 8%;
+  margin-bottom: 0;
+  color: grey;
+  text-align: center;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 990px) {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+  .nav-link{
+    margin-left: 15px;
+  }
+  .carousel-image{
+    width: 80%;
   }
 }
 
@@ -138,4 +248,9 @@ top: 50%;
     flex: 100%;
     max-width: 100%;
   }
+
+
+}
+@media screen and (max-width: 425px){
+
 }
